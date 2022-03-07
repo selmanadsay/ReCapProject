@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,8 +36,18 @@ namespace Business.Concrete.Constans
         public static string RentalAdded = "Kiralama kaydı eklendi";
         public static string RentalInvalid = "Kiralama geçersiz";
 
-        public static string RemovedMessage { get; internal set; }
-        public static string AddedMessage { get; internal set; }
-        public static string UpdatedMessage { get; internal set; }
+        public static string AuthorizationDenied = "Yetkiniz yok.";
+        public static string UserRegistered = "Kullanıcı oluşturuldu.";
+        public static string UserNotFound = "Kullanıcı bulunamadı.";
+        public static string PasswordError = "Şifre hatalı.";
+        public static string SuccessfulLogin = "Giriş başarılı.";
+        public static string UserAlreadyExists = "Kullanıcı kaydı bulunmaktadır.";
+        public static string AccessTokenCreated = "Token oluşturuldu.";
+
+
+
+        public static string AddedMessage = "Resim eklendi";
+        public static string RemovedMessage = "Resim silindi";
+        public static string UpdatedMessage = "Resim güncellendi";
     }
 }

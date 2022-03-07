@@ -48,8 +48,7 @@ namespace Core.DataAccess.EntityFramework
             {
                 return filter == null ? context.Set<TEntity>().ToList() : context.Set<TEntity>().Where(filter).ToList();
 
-                //eğer filter null ise   context.Set<Product>().ToList() bu çalışacak eğer null değilse context.Set<Product>().Where(filter).ToList(); bu çalışacaktır...
-                //bu yazım şekli thearry operatörü vs gibi birşeydi önceki ödevlerde var
+            
             }
         }
 
